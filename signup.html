@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - CollegeMate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">🎓 CollegeMate</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div>
+
+        <h1>Create Account 📝</h1>
+
+        <p>Join CollegeMate today.</p>
+
+        <br>
+
+        <input type="text"
+               placeholder="Full Name"
+               style="padding:14px;width:300px;border-radius:8px;border:1px solid #ccc;"><br><br>
+
+        <input type="email"
+               placeholder="Email"
+               style="padding:14px;width:300px;border-radius:8px;border:1px solid #ccc;"><br><br>
+
+        <input type="password"
+               placeholder="Password"
+               style="padding:14px;width:300px;border-radius:8px;border:1px solid #ccc;"><br><br>
+
+        <select
+            style="padding:14px;width:300px;border-radius:8px;border:1px solid #ccc;">
+
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="cr">CR</option>
+
+        </select>
+
+        <br><br>
+
+        <button class="btn" onclick="signupDemo()">
+            Create Account
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+</section>
+
+<script>
+function signupDemo() {
+    document.getElementById("message").innerText =
+        "Firebase signup will be connected in the next step.";
+}
+</script>
+
+</body>
+</html>
